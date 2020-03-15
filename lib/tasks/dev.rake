@@ -3,9 +3,13 @@
 namespace :dev do
   desc 'Configura o ambiente de desenvolvimento'
   task setup: :environment do
-    puts %x(rails db:drop)
-    puts %x(rails db:create)
-    puts %x(rails db:migrate)
-    puts %x(rails db:seed)
+    if Rails.env.development?
+      spinner = TTY::Spinner.new("[:spinner] Executando tarefas")
+      spinner.auto_spin
+      %x(rails db:drop db:create db:migrate db:seed)
+      spinner.success('(Concluido com sucesso!)')
+    else
+      puts "Você não está em ambiente de desenvolvimento!"
+    end
   end
 end
