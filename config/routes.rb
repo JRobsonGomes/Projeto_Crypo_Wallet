@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
-  resources :coins
+  get 'welcome/index'
+
+  resources :coins #Declara todas as rotas de uma vez
+
+  root 'welcome#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
