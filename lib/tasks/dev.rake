@@ -21,27 +21,32 @@ namespace :dev do
         {
           description: 'Bitcoin',
           acronym: 'BTC',
-          url_image: 'https://toppng.com/uploads/preview/bitcoin-png-bitcoin-logo-transparent-background-11562933997uxok6gcqjp.png'
+          url_image: 'https://toppng.com/uploads/preview/bitcoin-png-bitcoin-logo-transparent-background-11562933997uxok6gcqjp.png',
+          mining_type: MiningType.find_by(acronym: 'PoW')
         },
         {
           description: 'Ethereum',
           acronym: 'ETH',
-          url_image: 'https://cdn2.iconfinder.com/data/icons/cryptocurrency-5/100/cryptocurrency_blockchain_crypto-02-512.png'
+          url_image: 'https://cdn2.iconfinder.com/data/icons/cryptocurrency-5/100/cryptocurrency_blockchain_crypto-02-512.png',
+          mining_type: MiningType.all.sample
         },
         {
           description: 'Dash',
           acronym: 'DASH',
-          url_image: 'https://guiadobitcoin.com.br/wp-content/uploads/2018/06/Dash-Logo.png'
+          url_image: 'https://guiadobitcoin.com.br/wp-content/uploads/2018/06/Dash-Logo.png',
+          mining_type: MiningType.all.sample
         },
         {
           description: 'Iota',
           acronym: 'IOT',
           url_image: 'https://s2.coinmarketcap.com/static/img/coins/200x200/1720.png',
+          mining_type: MiningType.all.sample
         },
         {
           description: 'ZCash',
           acronym: 'ZEC',
           url_image: 'https://www.cryptocompare.com/media/351360/zec.png',
+          mining_type: MiningType.all.sample
         }
       ]
 

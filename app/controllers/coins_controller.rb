@@ -2,7 +2,7 @@
 
 class CoinsController < ApplicationController
   layout 'adm'
-  before_action :set_coin, only: %i[show edit update destroy]
+  before_action :set_coin, only: [:show, :edit, :update, :destroy]
 
   # GET /coins
   # GET /coins.json
