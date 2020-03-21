@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :mining_types
+  resources :coins
   get 'welcome/index'
 
   resources :coins #Declara todas as rotas de uma vez
