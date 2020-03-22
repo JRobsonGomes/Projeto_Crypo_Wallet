@@ -12,4 +12,6 @@
  *
  *= require_tree .
  *= require_self
+ *= require toastify-js/src/toastify
+ *= require bootstrap
  */
