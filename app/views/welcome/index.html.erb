@@ -1,5 +1,14 @@
+<%#= link_to 'Português', '/?locale=pt-BR' %> <!--Uma forma de usar-->
+<%#= link_to 'Inglês', '/?locale=en' %>
+<p>
+    <%= link_to 'Português', root_path(locale: 'pt-BR') %>
+</p>
+<p>
+    <%= link_to 'Inglês', root_path(locale:'en') %>
+</p>
+
 <h1>Seja Bem-Vindo</h1>
-<p>Idioma usado na aplicação é: <strong><%= locale %></strong></p>
+<p>Idioma usado na aplicação é: <strong><%= t('actual_locale') %></strong></p>
 <p><strong>Data: </strong><%= l(Date.today) %></p>
 <p> <%= t('hello') %> </p>
 <%= render 'menu' %> <%#renderizando partial%>
