@@ -15,9 +15,16 @@ pt-BR:
   new:
     coin: "Nova Moeda"
     mining_type: "Novo Tipo de Mineração"
+    msg_coin_create: 'Moeda criada com sucesso.'
+    msg_mining_type_create: 'Tipo de mineração criado com sucesso.'
   editing:
     coin: "Editando Moeda"
     mining_type: "Editando Tipo de Mineração"
+    msg_coin_update: 'Moeda atualizada com sucesso.'
+    msg_mining_type_update: 'Tipo de mineração atualizado com sucesso.'
   showing:
     coin: "Mostrando Moeda"
     mining_type: "Mostrando Tipo de Mineração"
+  destroy:
+    msg_coin_destroy: "Moeda excluída com sucesso."
+    msg_mining_type_destroy: 'Tipo de mineração excluído com sucesso.'

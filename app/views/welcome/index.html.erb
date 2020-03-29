@@ -5,3 +5,5 @@
   <p><%= t('messages.menu')%></p>
   <%= render 'menu' %> <%#renderizando partial%>
 </div>
+
+<%flash.now[:notice] = t('welcome')%>

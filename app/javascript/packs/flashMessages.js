@@ -15,7 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: 3000,
             close: true,
             backgroundColor: backgroundColors[type],
-            stopOnFocus: true
+            stopOnFocus: true,
+            gravity: "top",
+            position: 'left'
         }).showToast();
     });
 });

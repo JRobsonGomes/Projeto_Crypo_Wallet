@@ -21,7 +21,7 @@ namespace :dev do
         {
           description: 'Bitcoin',
           acronym: 'BTC',
-          url_image: 'https://toppng.com/uploads/preview/bitcoin-png-bitcoin-logo-transparent-background-11562933997uxok6gcqjp.png',
+          url_image: 'https://lh3.googleusercontent.com/proxy/2AjfS9XENwo9A56rlwqIXv_WDTIGOwlVw_W7BtcdCsWLNWKfCKUOC7IAkGA-Plh2C8kA-j3sRPgru-AdL_EaPhiIWHNln9H-8Gt-3tbJprh1lER9QuqJe8Mp-8a2iA',
           mining_type: MiningType.find_by(acronym: 'PoW')
         },
         {

@@ -1,14 +1,6 @@
 <%= form_with(model: coin, local: true) do |form| %>
   <% if coin.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(coin.errors.count, "error") %> prohibited this coin from being saved:</h2>
-
-      <ul>
-        <% coin.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
+      <% flash.now[:error] = coin.errors.full_messages.to_sentence %>
   <% end %>
 
   <div class="form-group">

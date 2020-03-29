@@ -46,9 +46,16 @@ en:
   new:
     coin: "New Coin"
     mining_type: "New Mining Type"
+    msg_coin_create: 'Coin was successfully created.'
+    msg_mining_type_create: 'Mining type was successfully created.'
   editing:
     coin: "Editing Coin"
     mining_type: "Editing Mining Type"
+    msg_coin_update: 'Coin was successfully updated.'
+    msg_mining_type_update: 'Mining type was successfully updated.'
   showing:
     coin: "Showing Coin"
     mining_type: "Showing Mining Type"
+  destroy:
+    msg_coin_destroy: 'Coin was successfully destroyed.'
+    msg_mining_type_destroy: 'Mining type was successfully destroyed.'
